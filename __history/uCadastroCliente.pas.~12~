@@ -238,7 +238,7 @@ begin
    end;
 
 
- v_ArquivoAnexo                        := GetCurrentDir()+'\DadosCadastrais.xml';
+ v_ArquivoAnexo                        := GetCurrentDir()+'\DadosCadastrais.xml'; // 'C:\Users\euripedes\Documents\Embarcadero\Studio\Projects\Win32\Debug\dados.xml';
  v_AttachmentFile                      :=  TIdAttachmentFile.Create(v_Message.MessageParts,v_ArquivoAnexo);
  v_AttachmentFile.ContentDisposition   := 'attachment';
  v_AttachmentFile.ContentType          :=  'text/xml';
