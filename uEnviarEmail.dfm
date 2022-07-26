@@ -23,9 +23,6 @@ object fEnviarEmail: TfEnviarEmail
     Width = 409
     Height = 19
     Panels = <>
-    ExplicitLeft = -308
-    ExplicitTop = 192
-    ExplicitWidth = 765
   end
   object Panel1: TPanel
     Left = 0
@@ -35,10 +32,6 @@ object fEnviarEmail: TfEnviarEmail
     Align = alClient
     BevelOuter = bvLowered
     TabOrder = 1
-    ExplicitLeft = 200
-    ExplicitTop = 96
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object lb_edt_Email: TLabeledEdit
       Left = 24
       Top = 48

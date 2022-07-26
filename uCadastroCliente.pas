@@ -65,6 +65,7 @@ type
   public
     { Public declarations }
     procedure SalvaXML;
+    procedure CriaXML;
     function EnviarEmail(p_destinatario:string):Boolean;
   end;
 
@@ -83,7 +84,9 @@ uses
   IdText,
   IdExplicitTLSClientServerBase,
   uConfiguracoes,
-  uEnviarEmail;
+  uEnviarEmail,
+  XMLDoc,
+  XMLIntf;
 
 {$R *.dfm}
 
@@ -150,6 +153,41 @@ begin
       FreeAndNil(v_ResponseJsonObj);
       v_Response.Destroy;
    end;
+
+end;
+
+procedure TfCadastroCliente.CriaXML;
+var
+  v_XMLDoc : TXMLDocument;
+  v_XMLNodeCliente, v_XMLNodeEndereco :IXMLNode;
+  i: integer;
+  v_Field:String;
+begin
+ try
+  v_XMLDoc  := TXMLDocument.Create(nil);
+  v_XMLDoc.Active := true;
+  v_XMLNodeCliente := v_XMLDoc.AddChild('Cliente');
+  for i := 0 to cdsClientes.FieldCount-1 do
+    begin
+      v_Field :=  cdsClientes.Fields[i].FieldName;
+      if pos('endereco',cdsClientes.Fields[i].FieldName)>0 then
+        begin
+          if v_XMLNodeEndereco = nil then
+             v_XMLNodeEndereco := v_XMLNodeCliente.AddChild('Endereco');
+          v_Field := copy(v_Field,10,Length(v_Field)-9);
+          v_XMLNodeEndereco.AddChild(v_Field).Text :=  cdsClientes.Fields[i].AsString;
+        end
+      else
+        begin
+         v_XMLNodeCliente.AddChild(v_Field).Text :=  cdsClientes.Fields[i].AsString;
+        end;
+    end;
+
+  v_XMLDoc.SaveToFile(GetCurrentDir+'\DadosCadastrais.xml');
+
+ finally
+  v_XMLDoc.Free;
+ end;
 
 end;
 

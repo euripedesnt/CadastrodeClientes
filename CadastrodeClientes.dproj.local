@@ -15,9 +15,9 @@
     <Transaction>2022/07/24 17:09:18.000.193,=C:\dev\CadastrodeClientes\Unit1.pas</Transaction>
     <Transaction>2022/07/24 17:09:49.000.448,C:\dev\CadastrodeClientes\Unit1.dfm=C:\dev\CadastrodeClientes\uCadastroCliente.dfm</Transaction>
     <Transaction>2022/07/24 17:09:49.000.448,C:\dev\CadastrodeClientes\Unit1.pas=C:\dev\CadastrodeClientes\uCadastroCliente.pas</Transaction>
-    <Transaction>2022/07/24 19:09:57.628,=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.pas</Transaction>
-    <Transaction>2022/07/24 19:10:55.475,C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\uEnviarEmail.dfm=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.dfm</Transaction>
-    <Transaction>2022/07/24 19:10:55.475,C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\uEnviarEmail.pas=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.pas</Transaction>
+    <Transaction>2022/07/24 19:09:57.000.628,=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.pas</Transaction>
+    <Transaction>2022/07/24 19:10:55.000.475,C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\uEnviarEmail.dfm=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.dfm</Transaction>
+    <Transaction>2022/07/24 19:10:55.000.475,C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\uEnviarEmail.pas=C:\Users\euripedes\Documents\GitHub\CadastrodeClientes\Unit1.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5" Android64="teste2"/>

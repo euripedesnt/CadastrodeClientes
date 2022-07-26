@@ -43,7 +43,8 @@ begin
   begin
    try
      Screen.Cursor := crHourGlass;
-     fCadastroCliente.SalvaXML;
+//     fCadastroCliente.SalvaXML;
+     fCadastroCliente.CriaXML;
      if fCadastroCliente.EnviarEmail(lb_edt_Email.Text) then
         Messagedlg('E-mail enviado com sucesso.',mtcustom,[mbok],0);
    finally

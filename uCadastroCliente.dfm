@@ -9,12 +9,14 @@ inherited fCadastroCliente: TfCadastroCliente
   TextHeight = 13
   inherited Panel1: TPanel
     Width = 765
+    ExplicitWidth = 765
     inherited btnSair: TBitBtn
       Left = 686
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 5
       TabStop = False
+      ExplicitLeft = 686
     end
     inherited btnCancelar: TBitBtn
       Font.Style = [fsBold]
@@ -55,6 +57,8 @@ inherited fCadastroCliente: TfCadastroCliente
   inherited StatusBar1: TStatusBar
     Top = 531
     Width = 765
+    ExplicitTop = 531
+    ExplicitWidth = 765
   end
   object GroupBox2: TGroupBox [2]
     Left = 0
@@ -160,7 +164,6 @@ inherited fCadastroCliente: TfCadastroCliente
     Align = alTop
     Caption = 'Endere'#231'o do Cliente'
     TabOrder = 2
-    ExplicitTop = 195
     object Label6: TLabel
       Left = 11
       Top = 16
@@ -387,9 +390,6 @@ inherited fCadastroCliente: TfCadastroCliente
     ParentBackground = False
     ParentFont = False
     TabOrder = 5
-    ExplicitLeft = -24
-    ExplicitTop = 463
-    ExplicitWidth = 789
   end
   object DBGrid1: TDBGrid [5]
     Left = 0
